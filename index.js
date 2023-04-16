@@ -31,6 +31,8 @@ function requestListener(request, response) {
     response.end('<h1>404! alamat tidak ditemukan</h1>');
 }
 
+process.env.NODE_ENV = '0.0.0.0';
+
 // membuat sebuah HTTP server
 const server = http.createServer(requestListener);
 
